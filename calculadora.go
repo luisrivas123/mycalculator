@@ -51,7 +51,7 @@ func parsear(entrada string) int {
 func leerEntrada() string {
 	// Leer input del usuario
 	scanner := bufio.NewScanner(os.Stdin)
-	// captura y devuele los valores
+	// captura y devuele los valores de consola
 	scanner.Scan()
 	return scanner.Text()
 }
