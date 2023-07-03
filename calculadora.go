@@ -15,11 +15,11 @@ func isError(e error) {
 	}
 }
 
-type calc struct {
+type Calc struct {
 }
 
 // Receiver function, le da la propieda a calc de tener este método
-func (calc) operate(entrada string, operador string) int {
+func (Calc) Operate(entrada string, operador string) int {
 	entradaLimpia := strings.Split(entrada, operador)
 	operador1 := parsear(entradaLimpia[0])
 	operador2 := parsear(entradaLimpia[1])
